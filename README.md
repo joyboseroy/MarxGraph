@@ -108,6 +108,4 @@ yours to license, e.g. CC-BY-4.0). Credit MIA prominently either way.
 
 ## V1 scope
 
-Marx/Engels, Lenin, Luxemburg, Trotsky, Stalin, Mao. ~25-45 works. Anything beyond
-(Gramsci, Bernstein, Kautsky as a proper node rather than Lenin's punching bag, non-English
-corpora) is V2. Resist the temptation; that is how repos die.
+Marx/Engels, Lenin, Luxemburg, Trotsky, Stalin, Mao.
