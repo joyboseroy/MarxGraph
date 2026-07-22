@@ -1,6 +1,6 @@
 # MarxGraph
 
-**Released dataset:** [https://huggingface.co/datasets/joyboseroy/MarxGraph](https://huggingface.co/datasets/joyboseroy/MarxGraph) (update this link once published)
+**Released dataset:** [https://huggingface.co/datasets/joyboseroy/MarxGraph](https://huggingface.co/datasets/joyboseroy/MarxGraph) 
 
 A temporal, perspectival knowledge graph of Marxist thought: how concepts moved and mutated
 from Marx and Engels through Lenin, Luxemburg, Trotsky and Stalin to Mao. Corpus sourced
