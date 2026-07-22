@@ -1,0 +1,51 @@
+# Seed concepts for normalization. The extractor may propose new concepts, but must
+# map to these slugs when a mention is a variant/alias. Grouped by rough origin.
+concepts:
+  # Marx / Engels core
+  class_struggle:        {label: "Class struggle", aliases: ["class conflict", "class antagonism"]}
+  surplus_value:         {label: "Surplus value", aliases: ["surplus labour", "exploitation of labour"]}
+  alienation:            {label: "Alienation", aliases: ["estranged labour", "estrangement"]}
+  historical_materialism: {label: "Historical materialism", aliases: ["materialist conception of history"]}
+  dialectical_materialism: {label: "Dialectical materialism", aliases: ["materialist dialectics"]}
+  dictatorship_of_the_proletariat: {label: "Dictatorship of the proletariat", aliases: ["proletarian dictatorship", "workers' state"]}
+  commodity_fetishism:   {label: "Commodity fetishism", aliases: ["fetishism of commodities"]}
+  base_superstructure:   {label: "Base and superstructure", aliases: ["economic base", "superstructure"]}
+  proletarian_internationalism: {label: "Proletarian internationalism", aliases: ["workers of the world"]}
+  primitive_accumulation: {label: "Primitive accumulation", aliases: ["original accumulation"]}
+  withering_away_of_state: {label: "Withering away of the state", aliases: ["abolition of the state"]}
+  revolutionary_agency:  {label: "Revolutionary agency", aliases: ["revolutionary subject", "revolutionary class"]}
+
+  # Lenin
+  vanguard_party:        {label: "Vanguard party", aliases: ["party of a new type", "professional revolutionaries"]}
+  imperialism:           {label: "Imperialism", aliases: ["highest stage of capitalism", "monopoly capitalism"]}
+  democratic_centralism: {label: "Democratic centralism", aliases: []}
+  labour_aristocracy:    {label: "Labour aristocracy", aliases: ["labor aristocracy"]}
+  soviet_power:          {label: "Soviet power", aliases: ["soviets", "workers' councils"]}
+  trade_union_consciousness: {label: "Trade union consciousness", aliases: ["economism", "spontaneity"]}
+  national_self_determination: {label: "National self-determination", aliases: ["right of nations to self-determination"]}
+
+  # Luxemburg
+  mass_strike:           {label: "Mass strike", aliases: ["general strike"]}
+  spontaneity:           {label: "Spontaneity of the masses", aliases: ["spontaneous action"]}
+  reform_vs_revolution:  {label: "Reform versus revolution", aliases: ["revisionism debate"]}
+  capital_accumulation_crisis: {label: "Accumulation and breakdown", aliases: ["accumulation of capital"]}
+
+  # Trotsky
+  permanent_revolution:  {label: "Permanent revolution", aliases: ["uninterrupted revolution"]}
+  combined_uneven_development: {label: "Combined and uneven development", aliases: ["uneven development"]}
+  degenerated_workers_state: {label: "Degenerated workers' state", aliases: ["bureaucratic degeneration"]}
+  transitional_demands:  {label: "Transitional demands", aliases: ["transitional program"]}
+
+  # Stalin / Marxism-Leninism
+  socialism_in_one_country: {label: "Socialism in one country", aliases: []}
+  leninism_as_doctrine:  {label: "Leninism (codified doctrine)", aliases: ["foundations of leninism"]}
+  intensification_class_struggle: {label: "Intensification of class struggle under socialism", aliases: []}
+
+  # Mao
+  mass_line:             {label: "Mass line", aliases: ["from the masses, to the masses"]}
+  protracted_peoples_war: {label: "Protracted people's war", aliases: ["protracted war", "guerrilla warfare strategy"]}
+  new_democracy:         {label: "New Democracy", aliases: ["new democratic revolution"]}
+  principal_contradiction: {label: "Principal contradiction", aliases: ["primary contradiction", "on contradiction"]}
+  peasantry_as_revolutionary_base: {label: "Peasantry as revolutionary base", aliases: ["peasant revolution"]}
+  cultural_revolution:   {label: "Continuing revolution under socialism", aliases: ["cultural revolution"]}
+  practice_and_knowledge: {label: "Theory of practice", aliases: ["on practice", "perceptual and rational knowledge"]}

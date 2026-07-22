@@ -1,0 +1,83 @@
+# MarxGraph V1 corpus manifest
+# Direct EPUB URLs verified against https://www.marxists.org/ebooks/index.htm (Sep 2024 listing).
+# license: "pd" = public domain (pre-1929 original, MIA volunteer translation), "verify" = check
+# the work's credits/copyright page on MIA before redistributing text on Hugging Face.
+# If a work turns out to be non-redistributable, release passage OFFSETS + annotations for it
+# instead of raw text (the standard workaround used by e.g. BookCorpus successors).
+
+settings:
+  user_agent: "MarxGraphBot/0.1 (academic research; contact: joy.bose@ieee.org)"
+  delay_seconds: 5          # be gentle, MIA is volunteer-run
+  out_dir: data/raw
+
+# ---- Index pages to harvest additional EPUB links from ----
+index_pages:
+  - name: marx_engels_library
+    url: https://www.marxists.org/archive/marx/works/download/index.htm
+    author: mixed_marx_engels          # resolve per-file after download
+    tradition: classical_marxism
+    include_keywords: [manifesto, german-ideology, german_ideology, gotha, brumaire,
+                       wage, value-price, value_price, capital, socialism-utopian,
+                       soc-utop, anti-duhring, anti_duhring, origin, feuerbach,
+                       poverty-of-philosophy, civil-war-in-france, 1844]
+  - name: trotsky_library
+    url: https://www.marxists.org/ebooks/trotsky/index.htm
+    author: trotsky
+    tradition: trotskyism
+    include_keywords: [permanent, revolution-betrayed, betrayed, history, results,
+                       prospects, defence-of-marxism, defense, transitional,
+                       terrorism, lessons-of-october, stalinism]
+
+# ---- Verified direct EPUB links ----
+works:
+  # ---------- LENIN ----------
+  - {author: lenin, tradition: leninism, year: 1902, title: "What Is To Be Done?",
+     url: "https://www.marxists.org/ebooks/lenin/what-is-to-be-done.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1904, title: "One Step Forward, Two Steps Back",
+     url: "https://www.marxists.org/ebooks/lenin/lenin_one_step_forward.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1905, title: "Two Tactics of Social-Democracy",
+     url: "https://www.marxists.org/ebooks/lenin/two-tactics.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1908, title: "Materialism and Empirio-Criticism",
+     url: "https://www.marxists.org/ebooks/lenin/lenin_materialism-and-empirio-criticism.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1914, title: "Karl Marx (Exposition of Marxism)",
+     url: "https://www.marxists.org/ebooks/lenin/karl-marx.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1916, title: "Imperialism, the Highest Stage of Capitalism",
+     url: "https://www.marxists.org/ebooks/lenin/imperialism-highest-stage.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1917, title: "The State and Revolution",
+     url: "https://www.marxists.org/ebooks/lenin/state-and-revolution.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1918, title: "The Proletarian Revolution and the Renegade Kautsky",
+     url: "https://www.marxists.org/ebooks/lenin/renegade-kautsky.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1920, title: "Left-Wing Communism: An Infantile Disorder",
+     url: "https://www.marxists.org/ebooks/lenin/left-wing-communism.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1921, title: "The Tax in Kind",
+     url: "https://www.marxists.org/ebooks/lenin/lenin_the_tax_in_kind.epub", license: pd}
+  - {author: lenin, tradition: leninism, year: 1923, title: "Lenin's Last Works",
+     url: "https://www.marxists.org/ebooks/lenin/lenins_last_works.epub", license: verify}
+
+  # ---------- STALIN ----------
+  - {author: stalin, tradition: marxism_leninism, year: 1924, title: "The Foundations of Leninism",
+     url: "https://www.marxists.org/ebooks/stalin/foundations-leninism.epub", license: verify}
+  - {author: stalin, tradition: marxism_leninism, year: 1938, title: "Dialectical and Historical Materialism",
+     url: "https://www.marxists.org/ebooks/stalin/d_and_h_materialism_stalin.epub", license: verify}
+
+  # ---------- MAO ----------
+  - {author: mao, tradition: maoism, year: 1930, title: "Oppose Book Worship",
+     url: "https://www.marxists.org/ebooks/mao/Oppose_Book_Worship_-_Mao_Zedong.epub", license: verify}
+  - {author: mao, tradition: maoism, year: 1937, title: "Selected Works, Volume I (incl. On Practice, On Contradiction)",
+     url: "https://www.marxists.org/ebooks/mao/mao-selected-works-1.epub", license: verify}
+  - {author: mao, tradition: maoism, year: 1959, title: "Examples of Dialectics",
+     url: "https://www.marxists.org/ebooks/mao/examples-of-dialectics.epub", license: verify}
+  - {author: mao, tradition: maoism, year: 1964, title: "Quotations from Chairman Mao Tse-tung",
+     url: "https://www.marxists.org/ebooks/mao/Quotations_from_Chairman_Mao_Tse-tung.epub", license: verify}
+
+  # ---------- LUXEMBURG ----------
+  - {author: luxemburg, tradition: classical_marxism, year: 1900, title: "Reform or Revolution",
+     url: "https://www.marxists.org/ebooks/luxemburg/reform-revolution.epub", license: pd}
+  - {author: luxemburg, tradition: classical_marxism, year: 1906, title: "The Mass Strike",
+     url: "https://www.marxists.org/ebooks/luxemburg/mass-str.epub", license: pd}
+  - {author: luxemburg, tradition: classical_marxism, year: 1909, title: "The National Question",
+     url: "https://www.marxists.org/ebooks/luxemburg/The_National_Question_-_Luxemburg.epub", license: verify}
+  - {author: luxemburg, tradition: classical_marxism, year: 1913, title: "The Accumulation of Capital",
+     url: "https://www.marxists.org/ebooks/luxemburg/accumulation-capital.epub", license: verify}
+  - {author: luxemburg, tradition: classical_marxism, year: 1918, title: "The Russian Revolution",
+     url: "https://www.marxists.org/ebooks/luxemburg/The_Russian_Revolution_-_Luxemburg.epub", license: pd}

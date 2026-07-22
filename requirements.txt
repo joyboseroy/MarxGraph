@@ -1,0 +1,7 @@
+requests
+pyyaml
+beautifulsoup4
+ebooklib
+pandas
+pyarrow
+networkx
