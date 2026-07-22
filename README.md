@@ -1,5 +1,7 @@
 # MarxGraph
 
+**Released dataset:** [huggingface.co/datasets/\<your-repo-id\>](https://huggingface.co/datasets/) (update this link once published)
+
 A temporal, perspectival knowledge graph of Marxist thought: how concepts moved and mutated
 from Marx and Engels through Lenin, Luxemburg, Trotsky and Stalin to Mao. Corpus sourced
 from the Marxists Internet Archive (MIA), released as linked parquet tables (Hugging Face)
@@ -108,4 +110,6 @@ yours to license, e.g. CC-BY-4.0). Credit MIA prominently either way.
 
 ## V1 scope
 
-Marx/Engels, Lenin, Luxemburg, Trotsky, Stalin, Mao.
+Marx/Engels, Lenin, Luxemburg, Trotsky, Stalin, Mao. ~25-45 works. Anything beyond
+(Gramsci, Bernstein, Kautsky as a proper node rather than Lenin's punching bag, non-English
+corpora) is V2. Resist the temptation; that is how repos die.
